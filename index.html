@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/stylesheets/main.css">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.3/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+    <style>
+        .carousel-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+        }
+        .carousel-inner {
+          display: flex;
+          transition: transform 0.5s ease-in-out;
+        }
+        .carousel-item {
+          flex: 0 0 80%;
+          margin: 0 10%;
+          transition: transform 0.5s ease-in-out;
+        }
+        .carousel-item img {
+          width: 100%;
+        }
+        .carousel-prev, .carousel-next {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: rgba(0, 0, 0, 0.5);
+          color: white;
+          padding: 0.5rem;
+          cursor: pointer;
+        }
+        .carousel-prev {
+          left: 1rem;
+        }
+        .carousel-next {
+          right: 1rem;
+        }
+      </style>
+</head>
+
+<body>
+    <!-- HOMEPAGE -->
+
+    <section class="h-screen text-white bg-cover bg-center relative bg-hero-img " style="background-image: ('');">
+        <div class="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
+        <div class="container relative z-20">
+            <!-- NAVBAR -->
+             <nav class="pb-8 flex">
+
+                <div class="img-box w-1/2">
+                    <img src="static/assets/logo.png" alt="">
+                </div>
+                <div class="nav-links flex w-1/2 justify-between items-center">
+                    <a href="#">About</a>
+                    <a href="#">Programs</a>
+                    <a href="#">Schedule</a>
+                    <a href="#">Contacts</a>
+                    <div class="flex justify-between items-center space-x-2">
+                        <button class="rounded-full border-2 border-white p-2 hover:bg-black">Get in touch</button>
+                        <img class="h-8 w-8 " src="static/assets/instagram.png" alt="">
+                    </div>
+                </div>
+
+             </nav>
+
+             <!-- Homepage Info -->
+              <div class="homepage-info flex flex-col space-y-8">
+                <h1 class="text-6xl max-w-md font-dm-sans">Unleash your potential on the court</h1>
+                <p class="text-lg max-w-xs ">Improved athletic performance in just 30 days</p>
+                <div class="btn-box flex space-x-4">
+                    <button class="py-2.5 px-5 border-2 border-white rounded-full bg-n-green-400 hover:bg-n-green-600 text-black font-poppins"> Join now</button>
+                    <button class="py-2.5 px-5 border-2 border-white hover:bg-black rounded-full font-poppins"> See programs</button>
+                </div>
+              </div>
+              </div>
+    </section>
+
+    <!-- 2nd Page -->
+    <section class="2nd-page h-[90vh] flex items-center justify-center">
+        <div class="flex flex-col space-y-8 max-w-4xl text-center">
+            <h1 class="text-4xl p-3 sm:text-5xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus facilis consectetur explicabo aut nostrum accusamus iste nemo.</h1>
+            <p class="max-w-sm self-center text-sm sm:max-w-lg sm:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, deserunt veniam. Quam ipsam cupiditate debitis perferendis, officiis facere ab, alias quia cum error incidunt hic voluptatum quidem voluptatem, excepturi eaque!</p>
+        </div>
+    </section>
+
+    <!-- Programs -->
+     <section class="Programs">
+        <div class="container">
+        <h1 class="text-4xl font-bold mb-6">Programs</h1>
+        <div class="prog-box sm:block md:flex md:space-x-1 justify-between lg:space-x-10">
+            <div class="card1 p-4 w-1/3 rounded-3xl border-2 flex flex-col justify-between space-y-6 ">
+                <img class="rounded-xl" src="https://kidsstoppress.com/wp-content/uploads/2021/09/1538658807.BestTennisAcademiesInPune_KIDSSTOPPRESS.jpg" alt="">
+                <h1 class="text-3xl font-bold">Junior</h1>
+                <p class="text-sm max-w-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias cumque quo sapiente? Illo alias rem delectus molestiae iste sunt officia obcaecati consequatur, soluta culpa.</p>
+                <div class="price-box flex w-full justify-between">
+                    <h1><span class="text-3xl font-bold">$120/</span><span class="font-bold text-xl">month</span></h1>
+                    <button class="p-2 px-6 bg-n-green-400 hover:bg-n-green-600 rounded-full max-md:bg-black">Join now</button>
+                </div>
+            </div>
+            <div class="card1 p-4 w-1/3 rounded-3xl border-2 flex flex-col justify-between space-y-6 ">
+                <img class="rounded-xl" src="https://kidsstoppress.com/wp-content/uploads/2021/09/1538658807.BestTennisAcademiesInPune_KIDSSTOPPRESS.jpg" alt="">
+                <h1 class="text-3xl font-bold">Junior</h1>
+                <p class="text-sm max-w-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias cumque quo sapiente? Illo alias rem delectus molestiae iste sunt officia obcaecati consequatur, soluta culpa.</p>
+                <div class="price-box flex w-full justify-between">
+                    <h1><span class="text-3xl font-bold">$120/</span><span class="font-bold text-xl">month</span></h1>
+                    <button class="p-2 px-6 bg-n-green-400 hover:bg-n-green-600 rounded-full">Join now</button>
+                </div>
+            </div>
+            <div class="card1 p-4 w-1/3 rounded-3xl border-2 flex flex-col justify-between space-y-6 ">
+                <img class="rounded-xl" src="https://kidsstoppress.com/wp-content/uploads/2021/09/1538658807.BestTennisAcademiesInPune_KIDSSTOPPRESS.jpg" alt="">
+                <h1 class="text-3xl font-bold">Junior</h1>
+                <p class="text-sm max-w-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias cumque quo sapiente? Illo alias rem delectus molestiae iste sunt officia obcaecati consequatur, soluta culpa.</p>
+                <div class="price-box flex w-full justify-between">
+                    <h1><span class="text-3xl font-bold">$120/</span><span class="font-bold text-xl">month</span></h1>
+                    <button class="p-2 px-6 bg-n-green-400 hover:bg-n-green-600 rounded-full">Join now</button>
+                </div>
+            </div>
+        </div>
+        </div>
+     </section>
+
+     <!--Features -->
+     <section class="features">
+        <div class="container flex ">
+
+            <div class="left-box w-4/12 flex flex-col space-y-8">
+                <h1 class="text-4xl max-w-sm">We provide more than just tennis lessons</h1>
+                <img class="h-[90%] w-[90%] rounded-3xl " src="static/assets/feature-img.jpg" alt="">
+            </div>
+            <div class="right w-8/12 flex flex-col justify-between ">
+                <div class="feature1 flex justify-around px-10">
+                    <h1 class="text-2xl w-1/3 font-bold"><span class="text-n-black-400">01/</span><br>Experienced Coaches</h1>
+                    <p class="max-w-md text-sm self-end">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus voluptates cum ab ad possimus aliquam!voluptates cum ab ad possimus aliquam!</p>
+                </div>
+                <div class="feature1 flex justify-around px-10">
+                    <h1 class="text-2xl w-1/3 font-bold"><span class="text-n-black-400">02/</span><br>Experienced Coaches</h1>
+                    <p class="max-w-md text-sm self-end">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus voluptates cum ab ad possimus aliquam!voluptates cum ab ad possimus aliquam!</p>
+                </div>
+                <div class="feature1 flex justify-around px-10">
+                    <h1 class="text-2xl w-1/3 font-bold"><span class="text-n-black-400">03/</span><br>Experienced Coaches</h1>
+                    <p class="max-w-md text-sm self-end">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus voluptates cum ab ad possimus aliquam!voluptates cum ab ad possimus aliquam!</p>
+                </div>
+                <div class="feature1 flex justify-around px-10">
+                    <h1 class="text-2xl w-1/3 font-bold"><span class="text-n-black-400">04/</span><br>Experienced Coaches</h1>
+                    <p class="max-w-md text-sm self-end">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus voluptates cum ab ad possimus aliquam!voluptates cum ab ad possimus aliquam!</p>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- Our team -->
+      <section class="Team">
+        <div class="container">
+            <h1 class="text-3xl pb-10">Our Team</h1>
+            <div class="image-box flex h-[70vh]">
+                <div class="player-1 w-1/4 flex flex-col space-y-2 items-center">
+                    <img class="rounded-t-full rounded-full rounded-br-none w-[90%] " src="static/assets/player1.jpg" alt="">
+                    <h1 class="text-xl font-bold">Rafael Nadal</h1>
+                    <p class="text-sm text-n-black-600">Childeren's coach</p>
+                </div>
+                <div class="player-1 w-1/4 flex flex-col space-y-2 justify-center items-center">
+                    <img class="rounded-t-full rounded-full rounded-br-none w-[90%] " src="static/assets/player2.jpg" alt="">
+                    <h1 class="text-xl font-bold">Rafael Nadal</h1>
+                    <p class="text-sm text-n-black-600">Childeren's coach</p>
+                </div>
+                <div class="player-1 w-1/4 flex flex-col space-y-2 items-center">
+                    <img class="rounded-t-full rounded-full rounded-br-none w-[90%] " src="static/assets/player3.jpg" alt="">
+                    <h1 class="text-xl font-bold">Rafael Nadal</h1>
+                    <p class="text-sm text-n-black-600">Childeren's coach</p>
+                </div>
+                <div class="player-1 w-1/4 flex flex-col space-y-2 justify-center items-center">
+                    <img class="rounded-t-full rounded-full rounded-br-none w-[90%] " src="static/assets/player4.jpg" alt="">
+                    <h1 class="text-xl font-bold">Rafael Nadal</h1>
+                    <p class="text-sm text-n-black-600">Childeren's coach</p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Schedule -->
+       <section class="Scheudle bg-slate-100">
+        <div class="flex">
+            <div class="left container w-1/2 flex flex-col space-y-6">
+                <h1 class="text-4xl">Schedule</h1>
+                <p class="text-sm max-w-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque minus praesentium fuga, nam, rem laboriosam optio ex sunt expedita vitae unde ab! Tempore, expedita! Explicabo temporibus aspernatur laudantium vel numquam neque. Consequatur nulla fugit unde illo, velit voluptates molestiae cum aspernatur sequi dolores. Explicabo illo nostrum similique odit, eius sed!</p>
+                <div class="flex points">
+                    <ul class="w-full flex flex-wrap p-5">
+                        <li class="list-disc basis-1/2">Convinience</li>
+                        <li class="list-disc basis-1/2">Convinience</li>
+                        <li class="list-disc basis-1/2">Convinience</li>
+                        <li class="list-disc basis-1/2">Convinience</li>
+                    </ul>
+                </div>
+                <button class="bg-n-green-400 hover:bg-n-green-600 p-2 rounded-3xl w-4/12 font-semibold">See Schedule</button>
+            </div>
+            <div class="right">
+                <img class="-mt-12 rounded-3xl border-8 border-r-0 border-gray-300" src="static/assets/schedule.jpg" alt="">
+            </div>
+        </div>
+       </section>
+
+       <!-- Equipments -->
+        <!-- <section class="Equipments">
+            <div class="container space-y-8">
+                <h1 class="text-4xl font-semibold">Facilities and Equipment</h1>
+                <div class="1st flex justify-between">
+                    <div class="w-[50%] p-3 rounded-3xl border-2 border-gray-400 space-y-4 flex flex-col justify-end overflow-hidden relative">
+                        <img class="z-0 absolute h-30 w-30" src="static/assets/eq.avif" alt="">
+                        <h1 class="z-10 text-2xl font-semibold" >Practice Equipment</h1>
+                        <p class="bg-white z-10 max-w-lg text-sm text-gray-500">background image req Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, commodi. ipsum dolor sit amet, consectetur adipisicing elit. Tempore, laboriosam.</p>
+                    </div>
+                    <img class="w-[40%] rounded-3xl" src="static/assets/player4.jpg" alt="">
+                </div>
+                <div class="2nd flex space-x-10">
+                    <div class="w-1/3 flex flex-col space-y-3 border-2 border-gray-400 p-8 rounded-2xl">
+                        <h1 class="text-3xl">Tennis Courts</h1>
+                        <p class=" text-sm text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repellat explicabo mollitia qui eveniet deleniti vitae tempore quibusdam adipisci neque.</p>
+                    </div>
+                    <div class="w-1/3 flex flex-col space-y-3 border-2 border-gray-400 p-8 rounded-2xl">
+                        <h1 class="text-3xl">Tennis Courts</h1>
+                        <p class=" text-sm text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repellat explicabo mollitia qui eveniet deleniti vitae tempore quibusdam adipisci neque.</p>
+                    </div>
+                    <div class="w-1/3 flex flex-col space-y-3 border-2 border-gray-400 p-8 rounded-2xl">
+                        <h1 class="text-3xl">Tennis Courts</h1>
+                        <p class=" text-sm text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repellat explicabo mollitia qui eveniet deleniti vitae tempore quibusdam adipisci neque.</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section>
+            <div class="container">
+                <div class="grid grid-cols-12"></div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+         <section class="Gallery">
+            <h1 class="text-3xl text-center">Gallery</h1>
+            <div class="container flex justify-center">
+            <div class="relative w-full max-w-5xl carousel-container">
+                <div class="carousel-inner">
+                  <div class="carousel-item"><img src="https://via.placeholder.com/800x400?text=Image+1" alt="Image 1"></div>
+                  <div class="carousel-item"><img src="https://via.placeholder.com/800x400?text=Image+2" alt="Image 2"></div>
+                  <div class="carousel-item"><img src="https://via.placeholder.com/800x400?text=Image+3" alt="Image 3"></div>
+                </div>
+                <div class="carousel-prev">❮</div>
+                <div class="carousel-next">❯</div>
+              </div>
+            </div>
+              
+              <script>
+                let currentIndex = 0;
+              
+                const prevButton = document.querySelector('.carousel-prev');
+                const nextButton = document.querySelector('.carousel-next');
+                const carouselInner = document.querySelector('.carousel-inner');
+                const carouselItems = document.querySelectorAll('.carousel-item');
+              
+                function updateCarousel() {
+                  const offset = currentIndex * -100;
+                  carouselInner.style.transform = `translateX(${offset}%)`;
+                }
+              
+                prevButton.addEventListener('click', () => {
+                  currentIndex = (currentIndex - 1 + carouselItems.length) <= 0 ? carouselItems.length - 1 : currentIndex - 1;
+                  updateCarousel();
+                });
+              
+                nextButton.addEventListener('click', () => {
+                  currentIndex = (currentIndex + 1) % carouselItems.length;
+                  updateCarousel();
+                });
+              </script>
+         </section>
+
+         <!-- FAQs -->
+          <section class="FAQs">
+            <article id="the-article" class="mx-auto max-w-6xl p-4">
+                <div class="flex flex-col md:flex-row">
+                    <div class="w-1/3">
+                        <div class="sticky inset-x-0 top-0 left-0 py-12">
+                            <div class="text-6xl mb-8 font-semibold">All the A's for your Q's</div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 py-12">
+                        <div class="p-4 mx-4">
+                            <div class="item px-6 mb-6" x-data="{isOpen : false}">
+                                <a href="#" class="flex items-center justify-between text-lg" @click.prevent="isOpen = !isOpen">
+                                    <h4 :class="{' font-medium' : isOpen} ">How long are the lesson sessions ?</h4>
+                                    <svg :class="{'transform rotate-180' : isOpen}" class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </a>
+                                <div x-show="isOpen" @click.away="isOpen = false" class="mt-3" :class="{'text-gray-600' : isOpen}">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                            <div class="item px-6 mb-6" x-data="{isOpen : false}">
+                                <a href="#" class="flex items-center justify-between text-lg" @click.prevent="isOpen = !isOpen">
+                                    <h4 :class="{' font-medium' : isOpen} ">How long are the lesson sessions ?</h4>
+                                    <svg :class="{'transform rotate-180' : isOpen}" class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </a>
+                                <div x-show="isOpen" @click.away="isOpen = false" class="mt-3" :class="{'text-gray-600' : isOpen}">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                            <div class="item px-6 mb-6" x-data="{isOpen : false}">
+                                <a href="#" class="flex items-center justify-between text-lg" @click.prevent="isOpen = !isOpen">
+                                    <h4 :class="{' font-medium' : isOpen} ">How long are the lesson sessions ?</h4>
+                                    <svg :class="{'transform rotate-180' : isOpen}" class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </a>
+                                <div x-show="isOpen" @click.away="isOpen = false" class="mt-3" :class="{'text-gray-600' : isOpen}">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="item px-6 mb-6" x-data="{isOpen : false}">
+                                <a href="#" class="flex items-center justify-between text-lg" @click.prevent="isOpen = !isOpen">
+                                    <h4 :class="{' font-medium' : isOpen}">How long are the lesson sessions ?</h4>
+                                    <svg :class="{'transform rotate-180' : isOpen}" class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </a>
+                                <div x-show="isOpen" @click.away="isOpen = false" class="mt-3" :class="{'text-gray-600' : isOpen}">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                            <div class="item px-6 mb-6" x-data="{isOpen : false}">
+                                <a href="#" class="flex items-center justify-between text-lg" @click.prevent="isOpen = !isOpen">
+                                    <h4 :class="{' font-medium' : isOpen}">How long are the lesson sessions ?</h4>
+                                    <svg :class="{'transform rotate-180' : isOpen}" class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </a>
+                                <div x-show="isOpen" @click.away="isOpen = false" class="mt-3" :class="{'text-gray-600' : isOpen}">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                            <div class="item px-6 mb-6" x-data="{isOpen : false}">
+                                <a href="#" class="flex items-center justify-between text-lg" @click.prevent="isOpen = !isOpen">
+                                    <h4 :class="{' font-medium' : isOpen}">How long are the lesson sessions ?</h4>
+                                    <svg :class="{'transform rotate-180' : isOpen}" class="w-5 h-5 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </a>
+                                <div x-show="isOpen" @click.away="isOpen = false" class="mt-3" :class="{'text-gray-600' : isOpen}">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        
+          </section>
+
+          <!-- Footer -->
+           <section class="footer">
+            <div class="flex justify-between px-20 py-10 rounded-t-3xl bg-black text-white">
+                <div class="box1 flex flex-col justify-start space-y-10">
+                    <img src="static/assets/logo.png" alt="">
+                    <div class="social-media-box flex justify-between">
+                        <img class="h-8 w-8" src="static/assets/instagram.png" alt="">
+                        <img class="h-8 w-8" src="static/assets/facebook.png" alt="">
+                        <img class="h-8 w-8" src="static/assets/linkedin.png" alt="">
+                    </div>
+                </div>
+                <div class="box2 flex flex-col space-y-9">
+                    <h1 class="text-xl max-w-xs ">Get in touch with us today to start your tennis journey !</h1>
+                    <input type="text" class="rounded-xl  p-1 text-black" placeholder="Enter your email">
+                </div>
+                <div class="box3 w-1/4">
+                    <h1 class="text-xl">Club</h1>
+                    <div class="club-box w-full flex">
+                        <ul class="flex w-full flex-wrap space-y-2">
+                            <li class="basis-1/2 pt-2">About</li>
+                            <li class="basis-1/2">Schedule</li>
+                            <li class="basis-1/2">Programs</li>
+                            <li class="basis-1/2">Contacts</li>
+                            <li class="basis-1/2">Team</li>
+                            <li class="basis-1/2">FAQ</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box4 space-y-3">
+                    <h1 class="text-xl">Contacts</h1>
+                    <ul class=" space-y-2">
+                        <li class="list-disc">419 Park Ave S, New York, Pune</li>
+                        <li class="list-disc">10 AM - 7 PM</li>
+                        <li class="list-disc">psk22102004@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+           </section>
+
+    
+    </body>
+<script src="static/scripts/index.js"></script>
+</body>
+
+</html>

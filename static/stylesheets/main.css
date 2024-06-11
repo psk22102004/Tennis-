@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h1{
+        font-family: 'DM Sans', sans-serif;
+    }
+    p{
+        font-family: 'poppins', sans-serif;
+    }
+}
+
+@layer components{
+    .primary-btn{
+        @apply px-4 py-2.5 text-base font-medium font-poppins bg-Green-400 rounded-xl hover:bg-Green-500 hover:ring-1 hover:ring-Green-700
+    }
+}
+
+@layer utilities{
+    .body-text{
+        @apply text-Green-950/85 text-xl
+    }
+    .container{
+        @apply max-w-screen-xl mx-auto p-8;
+    }
+
+    .glass-effect {
+        @apply bg-white bg-opacity-10;
+        @apply backdrop-blur-0;
+        @apply border border-white border-opacity-20;
+    }
+    
+}
